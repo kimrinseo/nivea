@@ -1,0 +1,42 @@
+@keyframes leftMove{
+  0%{transform:translateX(100%);}
+  100%{transform:translateX(-100%);}
+}
+@keyframes leftMove2{
+  0%{transform:translateX(0%);}
+  100%{transform:translateX(-200%);}
+}
+
+@keyframes rightMove{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+@keyframes rightMove2{
+  0%{transform:translateX(-200%);}
+  100%{transform:translateX(0%);}
+}
+
+@keyframes myOpacity1 {
+  0%{opacity:0}
+  100%{opacity:1}
+}
+@keyframes myOpacity2 {
+  0%{opacity:0}
+  100%{opacity:.85}
+}
+@keyframes myOpacity3 {
+  0%{opacity:0}
+  100%{opacity:.60}
+}
+@keyframes myOpacity4 {
+  0%{opacity:0}
+  100%{opacity:.45}
+}
+@keyframes myOpacity5 {
+  0%{opacity:0}
+  100%{opacity:.30}
+}
+@keyframes myOpacity6 {
+  0%{opacity:0}
+  100%{opacity:.15}
+}
