@@ -174,10 +174,10 @@ $(document).ready(function(){
 
   })
 
-  $(".products>.btn_more").click(function(){
-    // 제품 리스트 더보기 버튼 js
-    $("products_list").css("height","auto")
-  })
+  // $(".products>.btn_more").click(function(){
+  //   // 제품 리스트 더보기 버튼 js
+  //   $("products_list").css("height","auto")
+  // })
 
   $(".qickNavi li>a").click(function(e){
     e.preventDefault();
@@ -281,7 +281,7 @@ $(document).ready(function(){
        $(".products_list").css("height",(slideListH2*slideNum)+"px")
     })
 
-    let adviceList = $(".advice_list>li").eq(10).height()+120
+    let adviceList = $(".advice_list>li").eq(10).height()+110
     $(".advice_list").height(adviceList*4)
 
     $(".advice>.btn_more").click(function(){
