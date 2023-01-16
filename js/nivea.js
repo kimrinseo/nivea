@@ -186,7 +186,7 @@ $(document).ready(function(){
     $("html,body").stop().animate({scrollTop:movePage},800)
   })
 
-  $(".all_subH>.scrollPage").on("mousewheel DOMMouseScroll",function(event){
+  $(".all_subH>.scrollPage").on("wheel DOMMouseScroll",function(event){
     let E = event.originalEvent;
     let delta = 0;
     if(E.detail){
@@ -205,7 +205,7 @@ $(document).ready(function(){
   })
 
 
-  $(".all_subH>.scrollPage2").on("mousewheel DOMMouseScroll",function(event){
+  $(".all_subH>.scrollPage2").on("wheel DOMMouseScroll",function(event){
 
     let E = event.originalEvent;
     let delta = 0;
