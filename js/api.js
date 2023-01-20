@@ -290,6 +290,42 @@ $(document).ready(function() {
     },
   })
 
+  function add(selector){
+    $(selector).addClass("swiper")
+    $(selector+">ul").addClass("swiper-wrapper")
+    $(selector+" li").addClass("swiper-slide")
+  }
+
+  add(".rule>.station")
+  add(".day>.station")
+
+  let rule = new Swiper(".rule>.station",{
+    navigation: {
+      nextEl: ".rule>.controller .next",
+      prevEl: ".rule>.controller .prev",
+    },
+    breakpoints: {
+   // when window width is >= 320px
+      780: {
+        slidesPerView: 3,
+        spaceBetween: 100,
+      },
+    },
+  })
+
+  let day = new Swiper(".day>.station",{
+    navigation: {
+      nextEl: ".day>.controller .next",
+      prevEl: ".day>.controller .prev",
+    },
+    breakpoints: {
+   // when window width is >= 320px
+      780: {
+        slidesPerView: 3,
+        spaceBetween: 100,
+      },
+    },
+  })
 
 
 })

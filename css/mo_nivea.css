@@ -60,11 +60,11 @@
   header.mo_header.on+.mo_depthManu{left: 0;}
 
   .mo_depthManu{width:100%; height:100%; box-sizing:border-box; position:fixed; top:0; left:100%; z-index:1000; padding:90px 25px 0; background:#fff; font-family:'niveareguler', 'Noto Sans KR', sans-serif; color:#0032A0; display:flex; flex-direction:column; justify-content:space-between; transition: all .5s ease 0s;}
-  .mo_depthManu>ul>li{font-size:1.7rem; border-bottom:.25px solid rgb(0 50 160 / 20%); padding-bottom:15px;}
-  .mo_depthManu>ul>li>a{padding-top: 15px; display:block; display:flex; justify-content:space-between; align-items:center;}
-  .mo_depthManu>ul>li>a::after{content:""; display:block; width:25px; height:5px; background:url("../source/xx/bottom_arrow.png") no-repeat 0 0 /25px 5px; margin-right:20px; transition:all .5s ease 0s;}
+  .mo_depthManu>ul>li{font-size:1.7rem; border-bottom:.25px solid rgb(0 50 160 / 20%); padding-bottom:15px; position:relative;}
+  .mo_depthManu>ul>li>a{padding-top: 15px; display:inline-block;}
+  .mo_depthManu>ul>li::after{content:""; display:block; width:25px; height:5px; background:url("../source/xx/bottom_arrow.png") no-repeat 0 0 /25px 5px; margin-right:20px; transition:all .5s ease 0s; position: absolute; top:4vh; right:0;}
 
-  .mo_depthManu>ul>li:nth-of-type(5)>a::after{display:none;}
+  .mo_depthManu>ul>li:nth-of-type(5)::after{display:none;}
 
   .mo_depthManu .depth_2>li{font-size:1.5rem; text-transform:capitalize; margin:20px 0; margin-left:15px;}
   .mo_depthManu .depth_2>li>a{position:relative;}
@@ -540,7 +540,7 @@
   .all_subN>.contants>.day>.station>ul>li>.text>p{text-align:center;}
   .all_subN>.contants>.day>.station>ul>li:nth-of-type(3)>.text>p{width:90%;}
 
-  .all_subN>.contants>.day>.controller{position:absolute; top:55%; left:50%; width:90%; display:flex; justify-content:space-between; transform:translate(-50%, -50%);}
+  .all_subN>.contants>.day>.controller{position:absolute; top:60%; left:50%; width:90%; display:flex; justify-content:space-between; transform:translate(-50%, -50%);}
   .all_subN>.contants>.day>.controller>a{width:40px; height:80px; display:block;}
   .all_subN>.contants>.day>.controller>a>img{width:100%; height:100%; object-fit:cover;}
 
